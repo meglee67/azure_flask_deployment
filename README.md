@@ -1,4 +1,5 @@
 # flask_2_intro
+* Due Sep 17th
 * HHA 502 HW 2
 * Assignment details below
 
