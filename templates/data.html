@@ -1,0 +1,29 @@
+<!-- this example code is taken from Hants repo here: https://github.com/hantswilliams/HHA_504_2023/blob/main/WK2/flaskapp_0/templates/data.html and then modified for the assignment -->
+
+{% extends "base.html" %} 
+
+{% block content %}
+
+    <section>
+        <h2 class="text-xl mb-2"> Dataset preview using a TABLE in HTML</h2>
+        <table class="table-auto">
+            <thead>
+                <tr>
+                    <th class="px-4 py-2">HospCode</th>
+                    <th class="px-4 py-2">Code</th>
+                    <th class="px-4 py-2">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in data.values %}
+                <tr>
+                    <td class="border px-4 py-2">{{ data[0] }}</td>
+                    <td class="border px-4 py-2">{{ data[1] }}</td>
+                    <td class="border px-4 py-2">{{ data[2] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+
+{% endblock %}
