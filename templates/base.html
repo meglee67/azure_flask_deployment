@@ -15,7 +15,7 @@
 <body class="bg-gray-200">
 
     <header class="bg-blue-600 text-white p-4">
-        <h1 class="text-2xl">Welcome to My Healthcare App</h1>
+        <h1 class="text-2xl">World Happiness Report 2015</h1>
         <nav>
             <ul class="flex space-x-4">
                 <li><a href="/" class="hover:underline">Home</a></li>
@@ -27,7 +27,10 @@
 
     <main class="p-4">
 
-        {% block content %}{% endblock %}
+        {% block content %}
+        <h1>This is an site that views the World Happiness Report from 2015. Countries are evaluated on several different factors and ranked accordingly. The dataset was acquired via this link : https://www.kaggle.com/datasets/unsdsn/world-happiness. </h1>
+        <p>To view this data, click on the data tab.</p>
+        {% endblock %}
 
     </main>
 
