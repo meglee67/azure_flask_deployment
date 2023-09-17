@@ -14,7 +14,7 @@ def about():
     return render_template('about.html')
 
 # replace the OG Hants link for a CSV file to your own unique file.
-df = pd.read_csv('https://raw.githubusercontent.com/hantswilliams/HHA_504_2023/main/WK1/data/113243405_StonyBrookSouthamptonHospital_StandardCharges.csv')
+df = pd.read_csv('data/2015.csv')
 @app.route('/data')
 def data(data=df):
     data = data.sample(15)
