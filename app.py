@@ -17,7 +17,7 @@ def about():
 df = pd.read_csv('data/2015.csv')
 @app.route('/data')
 def data(data=df):
-    data = data.sample(15)
+    data = data.head(15)
     return render_template('data.html', data=data)
 
 if __name__ == '__main__':
