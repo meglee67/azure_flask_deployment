@@ -5,13 +5,20 @@
 {% block content %}
 
     <section>
-        <h2 class="text-xl mb-2"> Dataset preview using a TABLE in HTML</h2>
+        <h2 class="text-xl mb-2"> These are the top 15 countries ranked by happiness.</h2>
         <table class="table-auto">
             <thead>
                 <tr>
-                    <th class="px-4 py-2">HospCode</th>
-                    <th class="px-4 py-2">Code</th>
-                    <th class="px-4 py-2">Description</th>
+                    <th class="px-4 py-2">Happiness Rank</th>
+                    <th class="px-4 py-2">Happiness Score</th>
+                    <th class="px-4 py-2">Standard Error</th>
+                    <th class="px-4 py-2">Economy (GDP per Capita)</th>
+                    <th class="px-4 py-2">Family</th>
+                    <th class="px-4 py-2">Health (Life Expectancy)</th>
+                    <th class="px-4 py-2">Freedom</th>
+                    <th class="px-4 py-2">Trust (Government Corruption)</th>
+                    <th class="px-4 py-2">Generosity</th>
+                    <th class="px-4 py-2">Dystopia Residual</th>
                 </tr>
             </thead>
             <tbody>
@@ -20,6 +27,13 @@
                     <td class="border px-4 py-2">{{ data[0] }}</td>
                     <td class="border px-4 py-2">{{ data[1] }}</td>
                     <td class="border px-4 py-2">{{ data[2] }}</td>
+                    <td class="border px-4 py-2">{{ data[3] }}</td>
+                    <td class="border px-4 py-2">{{ data[4] }}</td>
+                    <td class="border px-4 py-2">{{ data[5] }}</td>
+                    <td class="border px-4 py-2">{{ data[6] }}</td>
+                    <td class="border px-4 py-2">{{ data[7] }}</td>
+                    <td class="border px-4 py-2">{{ data[8] }}</td>
+                    <td class="border px-4 py-2">{{ data[9] }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
