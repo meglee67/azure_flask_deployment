@@ -1,7 +1,7 @@
 # flask_2_intro
 Here is the link to my azure website: https://megan-le-hha504-azure-flask-demo.azurewebsites.net/
 * Due Sep 17th
-* HHA 502 HW 2
+* HHA 504 HW 2
 * Assignment details below
 
 # Instructions on how to complete this assignment
